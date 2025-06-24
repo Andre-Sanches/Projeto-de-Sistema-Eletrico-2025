@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<Name>Simulação (1)</Name>
+	<Properties>
+		<SimulationProperties>
+			<General>
+				<BasePower UnitID="10">100.0000000000000</BasePower>
+				<ContinuousCalculation>
+					<Fault>0</Fault>
+					<SCPower>0</SCPower>
+					<HarmonicDistortion>0</HarmonicDistortion>
+				</ContinuousCalculation>
+			</General>
+			<PowerFlow>
+				<SolutionMethod>1</SolutionMethod>
+				<AccFactor>1.0000000000000</AccFactor>
+				<Tolerance>0.0000001000000</Tolerance>
+				<MaxIterations>100000</MaxIterations>
+				<SlackAngle>0.0000000000000</SlackAngle>
+			</PowerFlow>
+			<Stability>
+				<TimeStep>0.0100000000000</TimeStep>
+				<SimulationTime>10.0000000000000</SimulationTime>
+				<Frequency>60.0000000000000</Frequency>
+				<Tolerance>0.0000000100000</Tolerance>
+				<MaxIterations>100</MaxIterations>
+				<ControlStepRatio>10</ControlStepRatio>
+				<PlotStep>0.0100000000000</PlotStep>
+				<UseCOI>1</UseCOI>
+			</Stability>
+			<ZIPLoad>
+				<UseCompositeLoad>0</UseCompositeLoad>
+				<ActivePowerComposition>
+					<ConstantImpedance>100.0000000000000</ConstantImpedance>
+					<ConstantCurrent>0.0000000000000</ConstantCurrent>
+					<ConstantPower>0.0000000000000</ConstantPower>
+				</ActivePowerComposition>
+				<ReactivePowerComposition>
+					<ConstantImpedance>100.0000000000000</ConstantImpedance>
+					<ConstantCurrent>0.0000000000000</ConstantCurrent>
+					<ConstantPower>0.0000000000000</ConstantPower>
+				</ReactivePowerComposition>
+				<UndervoltageLimit>
+					<ConstantCurrent>70.0000000000000</ConstantCurrent>
+					<ConstantPower>70.0000000000000</ConstantPower>
+				</UndervoltageLimit>
+			</ZIPLoad>
+		</SimulationProperties>
+	</Properties>
+	<Elements>
+		<BusList>
+			<Bus ID="0">
+				<CADProperties>
+					<Position>
+						<X>344.1167403632541</X>
+						<Y>378.4745257460715</Y>
+					</Position>
+					<Size>
+						<Width>98.7786117835097</Width>
+						<Height>5.0000000000000</Height>
+					</Size>
+					<Angle>-90.0000000000000</Angle>
+				</CADProperties>
+				<ElectricalProperties>
+					<Name>Ponto de entrega</Name>
+					<NominalVoltage UnitID="2">13.8000000000000</NominalVoltage>
+					<IsVoltageControlled>1</IsVoltageControlled>
+					<ControlledVoltage Choice="0">1.0000000000000</ControlledVoltage>
+					<SlackBus>1</SlackBus>
+					<Fault>
+						<HasFault>0</HasFault>
+						<Type>3</Type>
+						<Location>4</Location>
+						<Resistance>0.0000000000000</Resistance>
+						<Reactance>0.0000000000000</Reactance>
+					</Fault>
+					<Stability>
+						<Plot>0</Plot>
+						<HasFault>0</HasFault>
+						<FaultTime>0.0000000000000</FaultTime>
+						<FaultLength>0.0000000000000</FaultLength>
+						<FaultResistance>0.0000000000000</FaultResistance>
+						<FaultReactance>0.0000000000000</FaultReactance>
+					</Stability>
+					<PowerQuality>
+						<Plot>0</Plot>
+					</PowerQuality>
+				</ElectricalProperties>
+			</Bus>
+			<Bus ID="1">
+				<CADProperties>
+					<Position>
+						<X>435.5323119078343</X>
+						<Y>14.5752462953401</Y>
+					</Position>
+					<Size>
+						<Width>100.0000000000000</Width>
+						<Height>5.0000000000000</Height>
+					</Size>
+					<Angle>-180.0000000000000</Angle>
+				</CADProperties>
+				<ElectricalProperties>
+					<Name>Barramento Área 3</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<IsVoltageControlled>0</IsVoltageControlled>
+					<ControlledVoltage Choice="0">1.0000000000000</ControlledVoltage>
+					<SlackBus>0</SlackBus>
+					<Fault>
+						<HasFault>0</HasFault>
+						<Type>3</Type>
+						<Location>4</Location>
+						<Resistance>0.0000000000000</Resistance>
+						<Reactance>0.0000000000000</Reactance>
+					</Fault>
+					<Stability>
+						<Plot>0</Plot>
+						<HasFault>0</HasFault>
+						<FaultTime>0.0000000000000</FaultTime>
+						<FaultLength>0.0000000000000</FaultLength>
+						<FaultResistance>0.0000000000000</FaultResistance>
+						<FaultReactance>0.0000000000000</FaultReactance>
+					</Stability>
+					<PowerQuality>
+						<Plot>0</Plot>
+					</PowerQuality>
+				</ElectricalProperties>
+			</Bus>
+			<Bus ID="2">
+				<CADProperties>
+					<Position>
+						<X>915.4275738652295</X>
+						<Y>68.6185979535893</Y>
+					</Position>
+					<Size>
+						<Width>100.0000000000000</Width>
+						<Height>5.0000000000000</Height>
+					</Size>
+					<Angle>-180.0000000000000</Angle>
+				</CADProperties>
+				<ElectricalProperties>
+					<Name>Barramento Área 2</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<IsVoltageControlled>0</IsVoltageControlled>
+					<ControlledVoltage Choice="0">1.0000000000000</ControlledVoltage>
+					<SlackBus>0</SlackBus>
+					<Fault>
+						<HasFault>0</HasFault>
+						<Type>3</Type>
+						<Location>4</Location>
+						<Resistance>0.0000000000000</Resistance>
+						<Reactance>0.0000000000000</Reactance>
+					</Fault>
+					<Stability>
+						<Plot>0</Plot>
+						<HasFault>0</HasFault>
+						<FaultTime>0.0000000000000</FaultTime>
+						<FaultLength>0.0000000000000</FaultLength>
+						<FaultResistance>0.0000000000000</FaultResistance>
+						<FaultReactance>0.0000000000000</FaultReactance>
+					</Stability>
+					<PowerQuality>
+						<Plot>0</Plot>
+					</PowerQuality>
+				</ElectricalProperties>
+			</Bus>
+			<Bus ID="3">
+				<CADProperties>
+					<Position>
+						<X>898.8686079617090</X>
+						<Y>324.3901755078626</Y>
+					</Position>
+					<Size>
+						<Width>126.5370554867687</Width>
+						<Height>5.0000000000000</Height>
+					</Size>
+					<Angle>-270.0000000000000</Angle>
+				</CADProperties>
+				<ElectricalProperties>
+					<Name>Barramento Área 1</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<IsVoltageControlled>0</IsVoltageControlled>
+					<ControlledVoltage Choice="0">1.0000000000000</ControlledVoltage>
+					<SlackBus>0</SlackBus>
+					<Fault>
+						<HasFault>1</HasFault>
+						<Type>0</Type>
+						<Location>4</Location>
+						<Resistance>0.0000000000000</Resistance>
+						<Reactance>0.0000000000000</Reactance>
+					</Fault>
+					<Stability>
+						<Plot>0</Plot>
+						<HasFault>0</HasFault>
+						<FaultTime>0.0000000000000</FaultTime>
+						<FaultLength>0.0000000000000</FaultLength>
+						<FaultResistance>0.0000000000000</FaultResistance>
+						<FaultReactance>0.0000000000000</FaultReactance>
+					</Stability>
+					<PowerQuality>
+						<Plot>0</Plot>
+					</PowerQuality>
+				</ElectricalProperties>
+			</Bus>
+			<Bus ID="4">
+				<CADProperties>
+					<Position>
+						<X>515.9198712748300</X>
+						<Y>187.2739398042649</Y>
+					</Position>
+					<Size>
+						<Width>138.1531191852552</Width>
+						<Height>5.0000000000000</Height>
+					</Size>
+					<Angle>-180.0000000000000</Angle>
+				</CADProperties>
+				<ElectricalProperties>
+					<Name>QGF</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<IsVoltageControlled>0</IsVoltageControlled>
+					<ControlledVoltage Choice="0">1.0000000000000</ControlledVoltage>
+					<SlackBus>0</SlackBus>
+					<Fault>
+						<HasFault>0</HasFault>
+						<Type>0</Type>
+						<Location>4</Location>
+						<Resistance>0.0758310249307</Resistance>
+						<Reactance>0.2955332409972</Reactance>
+					</Fault>
+					<Stability>
+						<Plot>0</Plot>
+						<HasFault>0</HasFault>
+						<FaultTime>0.0000000000000</FaultTime>
+						<FaultLength>0.0000000000000</FaultLength>
+						<FaultResistance>0.0000000000000</FaultResistance>
+						<FaultReactance>0.0000000000000</FaultReactance>
+					</Stability>
+					<PowerQuality>
+						<Plot>0</Plot>
+					</PowerQuality>
+				</ElectricalProperties>
+			</Bus>
+			<Bus ID="5">
+				<CADProperties>
+					<Position>
+						<X>533.1138034997755</X>
+						<Y>375.5170168427666</Y>
+					</Position>
+					<Size>
+						<Width>110.3024572735436</Width>
+						<Height>5.0000000000000</Height>
+					</Size>
+					<Angle>90.0000000000000</Angle>
+				</CADProperties>
+				<ElectricalProperties>
+					<Name>Secundário do transformador</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<IsVoltageControlled>0</IsVoltageControlled>
+					<ControlledVoltage Choice="0">1.0000000000000</ControlledVoltage>
+					<SlackBus>0</SlackBus>
+					<Fault>
+						<HasFault>0</HasFault>
+						<Type>3</Type>
+						<Location>4</Location>
+						<Resistance>0.0000000000000</Resistance>
+						<Reactance>0.0000000000000</Reactance>
+					</Fault>
+					<Stability>
+						<Plot>0</Plot>
+						<HasFault>0</HasFault>
+						<FaultTime>0.0000000000000</FaultTime>
+						<FaultLength>0.0000000000000</FaultLength>
+						<FaultResistance>0.0000000000000</FaultResistance>
+						<FaultReactance>0.0000000000000</FaultReactance>
+					</Stability>
+					<PowerQuality>
+						<Plot>0</Plot>
+					</PowerQuality>
+				</ElectricalProperties>
+			</Bus>
+		</BusList>
+		<CapacitorList/>
+		<IndMotorList/>
+		<InductorList/>
+		<LineList>
+			<Line ID="0">
+				<CADProperties>
+					<NodeList>
+						<Node ID="0">
+							<X>461.8433116822025</X>
+							<Y>187.2739398042649</Y>
+						</Node>
+						<Node ID="1">
+							<X>425.3862022970837</X>
+							<Y>211.3514184398152</Y>
+						</Node>
+						<Node ID="2">
+							<X>424.5323119078343</X>
+							<Y>14.5752462953401</Y>
+						</Node>
+					</NodeList>
+					<ParentIDList>
+						<ParentID ID="0">4</ParentID>
+						<ParentID ID="1">1</ParentID>
+					</ParentIDList>
+				</CADProperties>
+				<ElectricalProperties>
+					<IsOnline>1</IsOnline>
+					<Name>Linha 3</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<NominalPower UnitID="10">100.0000000000000</NominalPower>
+					<Resistance UnitID="0">3.3074792240000</Resistance>
+					<IndReactance UnitID="0">1.1385041550000</IndReactance>
+					<CapSusceptance UnitID="0">0.0000000000000</CapSusceptance>
+					<LineSize>0.0300000000000</LineSize>
+					<UseLinePower>0</UseLinePower>
+					<Fault>
+						<ZeroResistance>3.8694598340000</ZeroResistance>
+						<ZeroIndReactance>26.1772853200000</ZeroIndReactance>
+						<ZeroCapSusceptance>0.0000000000000</ZeroCapSusceptance>
+					</Fault>
+					<SwitchingList/>
+				</ElectricalProperties>
+			</Line>
+			<Line ID="1">
+				<CADProperties>
+					<NodeList>
+						<Node ID="0">
+							<X>569.4163586555824</X>
+							<Y>187.2739398042649</Y>
+						</Node>
+						<Node ID="1">
+							<X>797.9440292290103</X>
+							<Y>161.4150882305843</Y>
+						</Node>
+						<Node ID="2">
+							<X>795.6421265606591</X>
+							<Y>94.4563660342523</Y>
+						</Node>
+						<Node ID="3">
+							<X>879.6556987625725</X>
+							<Y>68.6185979535893</Y>
+						</Node>
+					</NodeList>
+					<ParentIDList>
+						<ParentID ID="0">4</ParentID>
+						<ParentID ID="1">2</ParentID>
+					</ParentIDList>
+				</CADProperties>
+				<ElectricalProperties>
+					<IsOnline>1</IsOnline>
+					<Name>Linha 4</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<NominalPower UnitID="10">100.0000000000000</NominalPower>
+					<Resistance UnitID="0">6.0038088640000</Resistance>
+					<IndReactance UnitID="0">2.3341412740000</IndReactance>
+					<CapSusceptance UnitID="0">0.0000000000000</CapSusceptance>
+					<LineSize>0.0500000000000</LineSize>
+					<UseLinePower>0</UseLinePower>
+					<Fault>
+						<ZeroResistance>10.2527700800000</ZeroResistance>
+						<ZeroIndReactance>61.7468836600000</ZeroIndReactance>
+						<ZeroCapSusceptance>0.0000000000000</ZeroCapSusceptance>
+					</Fault>
+					<SwitchingList/>
+				</ElectricalProperties>
+			</Line>
+			<Line ID="2">
+				<CADProperties>
+					<NodeList>
+						<Node ID="0">
+							<X>533.1138034997755</X>
+							<Y>342.6273559049526</Y>
+						</Node>
+						<Node ID="1">
+							<X>509.4055422384076</X>
+							<Y>187.2739398042649</Y>
+						</Node>
+					</NodeList>
+					<ParentIDList>
+						<ParentID ID="0">5</ParentID>
+						<ParentID ID="1">4</ParentID>
+					</ParentIDList>
+				</CADProperties>
+				<ElectricalProperties>
+					<IsOnline>1</IsOnline>
+					<Name>Line 3</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<NominalPower UnitID="10">100.0000000000000</NominalPower>
+					<Resistance UnitID="0">0.1738227146814</Resistance>
+					<IndReactance UnitID="0">0.1604916897507</IndReactance>
+					<CapSusceptance UnitID="0">0.0000000000000</CapSusceptance>
+					<LineSize>0.0100000000000</LineSize>
+					<UseLinePower>0</UseLinePower>
+					<Fault>
+						<ZeroResistance>0.4773199445983</ZeroResistance>
+						<ZeroIndReactance>4.2280124653740</ZeroIndReactance>
+						<ZeroCapSusceptance>0.0000000000000</ZeroCapSusceptance>
+					</Fault>
+					<SwitchingList/>
+				</ElectricalProperties>
+			</Line>
+			<Line ID="3">
+				<CADProperties>
+					<NodeList>
+						<Node ID="0">
+							<X>541.8433116822025</X>
+							<Y>187.2739398042649</Y>
+						</Node>
+						<Node ID="1">
+							<X>795.7941107128587</X>
+							<Y>210.3775186446692</Y>
+						</Node>
+						<Node ID="2">
+							<X>798.9216120182969</X>
+							<Y>312.8053399257841</Y>
+						</Node>
+						<Node ID="3">
+							<X>898.8686079617090</X>
+							<Y>312.8712118123790</Y>
+						</Node>
+					</NodeList>
+					<ParentIDList>
+						<ParentID ID="0">4</ParentID>
+						<ParentID ID="1">3</ParentID>
+					</ParentIDList>
+				</CADProperties>
+				<ElectricalProperties>
+					<IsOnline>1</IsOnline>
+					<Name>Linha 5</Name>
+					<NominalVoltage UnitID="1">380.0000000000000</NominalVoltage>
+					<NominalPower UnitID="10">100.0000000000000</NominalPower>
+					<Resistance UnitID="0">1.7061980610000</Resistance>
+					<IndReactance UnitID="0">0.8249653740000</IndReactance>
+					<CapSusceptance UnitID="0">0.0000000000000</CapSusceptance>
+					<LineSize>0.0150000000000</LineSize>
+					<UseLinePower>0</UseLinePower>
+					<Fault>
+						<ZeroResistance>3.2245498610000</ZeroResistance>
+						<ZeroIndReactance>21.8144044300000</ZeroIndReactance>
+						<ZeroCapSusceptance>0.0000000000000</ZeroCapSusceptance>
+					</Fault>
+					<SwitchingList/>
+				</ElectricalProperties>
+			</Line>
+		</LineList>
+		<LoadList/>
+		<SyncGeneratorList>
+			<SyncGenerator ID="0">
+				<CADProperties>
+					<Position>
+						<X>284.6650580625476</X>
+						<Y>478.9484941933325</Y>
+					</Position>
+					<Size>
+						<Width>50.0000000000000</Width>
+						<Height>50.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+					<NodePosition>
+						<X>344.1167403632541</X>
+						<Y>392.8638316378264</Y>
+					</NodePosition>
+					<ParentID>0</ParentID>
+				</CADProperties>
+				<ElectricalProperties>
+					<IsOnline>1</IsOnline>
+					<Name>Gerador</Name>
+					<NominalPower UnitID="10">100.0000000000000</NominalPower>
+					<NominalVoltage UnitID="2">13.8000000000000</NominalVoltage>
+					<ActivePower UnitID="7">0.0000000000000</ActivePower>
+					<ReactivePower UnitID="13">0.0000000000000</ReactivePower>
+					<HaveMaxReactive>0</HaveMaxReactive>
+					<MaxReactive UnitID="13">9999.0000000000000</MaxReactive>
+					<HaveMinReactive>0</HaveMinReactive>
+					<MinReactive UnitID="13">-9999.0000000000000</MinReactive>
+					<UseMachineBase>1</UseMachineBase>
+					<Fault>
+						<PositiveResistance>0.1000000000000</PositiveResistance>
+						<PositiveReactance>0.5000000000000</PositiveReactance>
+						<NegativeResistance>0.1000000000000</NegativeResistance>
+						<NegativeReactance>0.5000000000000</NegativeReactance>
+						<ZeroResistance>0.2000000000000</ZeroResistance>
+						<ZeroReactance>0.8000000000000</ZeroReactance>
+						<GroundResistance>0.0000000000000</GroundResistance>
+						<GroundReactance>0.0000000000000</GroundReactance>
+						<GroundNeutral>1</GroundNeutral>
+					</Fault>
+					<Stability>
+						<PlotSyncMachine>0</PlotSyncMachine>
+						<Inertia>1.0000000000000</Inertia>
+						<Damping>0.0000000000000</Damping>
+						<UseAVR>0</UseAVR>
+						<UseSpeedGovernor>0</UseSpeedGovernor>
+						<ArmResistance>0.0000000000000</ArmResistance>
+						<PotierReactance>0.0000000000000</PotierReactance>
+						<SatFactor>0.0000000000000</SatFactor>
+						<SyncXd>0.0000000000000</SyncXd>
+						<SyncXq>0.0000000000000</SyncXq>
+						<TransXd>1.0000000000000</TransXd>
+						<TransXq>0.0000000000000</TransXq>
+						<TransTd0>0.0000000000000</TransTd0>
+						<TransTq0>0.0000000000000</TransTq0>
+						<SubXd>0.0000000000000</SubXd>
+						<SubXq>0.0000000000000</SubXq>
+						<SubTd0>0.0000000000000</SubTd0>
+						<SubTq0>0.0000000000000</SubTq0>
+						<AVR>
+							<ConstantList/>
+							<ExponentialList/>
+							<GainList/>
+							<IOList/>
+							<LimiterList/>
+							<MultiplierList/>
+							<DividerList/>
+							<RateLimiterList/>
+							<SumList/>
+							<MathExprList/>
+							<TransferFunctionList/>
+							<ConnectionList/>
+						</AVR>
+						<SpeedGovernor>
+							<ConstantList/>
+							<ExponentialList/>
+							<GainList/>
+							<IOList/>
+							<LimiterList/>
+							<MultiplierList/>
+							<DividerList/>
+							<RateLimiterList/>
+							<SumList/>
+							<MathExprList/>
+							<TransferFunctionList/>
+							<ConnectionList/>
+						</SpeedGovernor>
+					</Stability>
+					<SwitchingList/>
+				</ElectricalProperties>
+			</SyncGenerator>
+		</SyncGeneratorList>
+		<SyncMotorList/>
+		<TransformerList>
+			<Transfomer ID="0">
+				<CADProperties>
+					<Position>
+						<X>447.8255410148844</X>
+						<Y>371.0062829155229</Y>
+					</Position>
+					<Size>
+						<Width>70.0000000000000</Width>
+						<Height>40.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+					<NodeList>
+						<Node ID="0">
+							<X>344.1167403632541</X>
+							<Y>368.8638316378264</Y>
+						</Node>
+						<Node ID="1">
+							<X>533.1138034997755</X>
+							<Y>367.8453218058921</Y>
+						</Node>
+					</NodeList>
+					<ParentIDList>
+						<ParentID ID="0">0</ParentID>
+						<ParentID ID="1">5</ParentID>
+					</ParentIDList>
+				</CADProperties>
+				<ElectricalProperties>
+					<IsOnline>1</IsOnline>
+					<Name>Transformador </Name>
+					<PrimaryNominalVoltage UnitID="2">13.8000000000000</PrimaryNominalVoltage>
+					<SecondaryNominalVoltage UnitID="1">380.0000000000000</SecondaryNominalVoltage>
+					<NominalPower UnitID="8">1000.0000000000000</NominalPower>
+					<Resistance UnitID="0">1.2000000000000</Resistance>
+					<IndReactance UnitID="0">3.8157568060000</IndReactance>
+					<Connection>0</Connection>
+					<TurnsRatio>1.0000000000000</TurnsRatio>
+					<PhaseShift>0.0000000000000</PhaseShift>
+					<UseTransfomerPower>0</UseTransfomerPower>
+					<Fault>
+						<ZeroResistance>1.2000000000000</ZeroResistance>
+						<ZeroIndReactance>3.8157568060000</ZeroIndReactance>
+						<PrimaryGrndResistance>0.0000000000000</PrimaryGrndResistance>
+						<PrimaryGrndReactance>0.0000000000000</PrimaryGrndReactance>
+						<SecondaryGrndResistance>0.0000000000000</SecondaryGrndResistance>
+						<SecondaryGrndReactance>0.0000000000000</SecondaryGrndReactance>
+					</Fault>
+					<SwitchingList/>
+				</ElectricalProperties>
+			</Transfomer>
+		</TransformerList>
+		<HarmCurrentList/>
+		<TextList>
+			<Text ID="0">
+				<CADProperties>
+					<Position>
+						<X>344.4960689158756</X>
+						<Y>309.8404681008007</Y>
+					</Position>
+					<Size>
+						<Width>99.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>1</ElementType>
+					<ElementNumber>0</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+			<Text ID="1">
+				<CADProperties>
+					<Position>
+						<X>509.0897654030960</X>
+						<Y>162.6978971922184</Y>
+					</Position>
+					<Size>
+						<Width>28.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>1</ElementType>
+					<ElementNumber>4</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+			<Text ID="2">
+				<CADProperties>
+					<Position>
+						<X>427.8092001159704</X>
+						<Y>-16.9664622394605</Y>
+					</Position>
+					<Size>
+						<Width>109.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>1</ElementType>
+					<ElementNumber>1</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+			<Text ID="3">
+				<CADProperties>
+					<Position>
+						<X>908.4681851881837</X>
+						<Y>41.4940039890986</Y>
+					</Position>
+					<Size>
+						<Width>109.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>1</ElementType>
+					<ElementNumber>2</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+			<Text ID="4">
+				<CADProperties>
+					<Position>
+						<X>897.7338375263347</X>
+						<Y>240.7933513372346</Y>
+					</Position>
+					<Size>
+						<Width>109.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>1</ElementType>
+					<ElementNumber>3</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+			<Text ID="5">
+				<CADProperties>
+					<Position>
+						<X>442.6906775382855</X>
+						<Y>402.9862305231246</Y>
+					</Position>
+					<Size>
+						<Width>86.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>9</ElementType>
+					<ElementNumber>0</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+			<Text ID="6">
+				<CADProperties>
+					<Position>
+						<X>225.5516725182514</X>
+						<Y>476.9178632779551</Y>
+					</Position>
+					<Size>
+						<Width>46.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>7</ElementType>
+					<ElementNumber>0</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+			<Text ID="7">
+				<CADProperties>
+					<Position>
+						<X>621.8076325655992</X>
+						<Y>396.1589556052618</Y>
+					</Position>
+					<Size>
+						<Width>166.0000000000000</Width>
+						<Height>16.0000000000000</Height>
+					</Size>
+					<Angle>0.0000000000000</Angle>
+				</CADProperties>
+				<TextProperties>
+					<ElementType>1</ElementType>
+					<ElementNumber>5</ElementNumber>
+					<DataType>0</DataType>
+					<DataUnit>0</DataUnit>
+					<Direction>0</Direction>
+					<DecimalPlaces>2</DecimalPlaces>
+				</TextProperties>
+			</Text>
+		</TextList>
+	</Elements>
+</Project>
+
